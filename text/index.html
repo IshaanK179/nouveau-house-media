@@ -20,7 +20,7 @@
 <div class="wrap narrow legal">
 <p class="eyebrow">Text Updates for Listing Agents</p>
 <h1>Get texts from Nouveau House Media</h1>
-<p>Sign up for shoot availability, scheduling and delivery updates, plus occasional offers on listing reels and photos.</p>
+<p>Sign up for scheduling, confirmation and delivery texts about your shoots. You can separately choose to get occasional promotional texts about listing photo and video offers.</p>
 <form id="optin" action="https://formsubmit.co/ishaankumar179@gmail.com" method="POST">
 <input type="hidden" name="_subject" value="New Nouveau House Media text opt-in">
 <input type="hidden" name="_template" value="table">
@@ -31,18 +31,22 @@
 <div class="field"><label class="lbl" for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" autocomplete="email" required></div>
 <div class="field"><label class="lbl" for="mobile">Mobile number</label><input type="tel" id="mobile" name="mobile" autocomplete="tel" inputmode="tel" placeholder="10-digit mobile number"></div>
 <div class="field"><label class="lbl" for="brokerage">Brokerage</label><input type="text" id="brokerage" name="brokerage" autocomplete="organization"></div>
-<div class="field"><label class="consent" for="sms_consent"><input type="checkbox" id="sms_consent" name="sms_consent" value="Yes - agreed to receive texts from Nouveau House Media"><span>Yes, text me at the number above. By checking this box I agree to receive recurring text messages from <strong>Nouveau House Media</strong> about listing video and photo services, including shoot availability, scheduling, and occasional promotions. Msg frequency varies (up to 4 msgs/week). Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Consent is not a condition of purchase. Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes. <a href="../privacy/" target="_blank">Privacy Policy</a> &middot; <a href="../terms/" target="_blank">SMS Terms</a></span></label></div>
-<p class="small">The checkbox is optional and is not pre-checked. If you check it, please enter your mobile number.</p>
+<fieldset class="field consent-group" style="border:0;padding:0;margin:0 0 16px;min-width:0"><legend class="lbl">Text messages (optional)</legend>
+<div class="field"><label class="consent" for="sms_consent_transactional"><input type="checkbox" id="sms_consent_transactional" name="sms_consent_transactional" value="Yes - agreed to receive transactional texts (scheduling, confirmations, reminders, delivery, replies) from Nouveau House Media"><span><strong>Yes, text me about my shoots.</strong> I agree to receive text messages from <strong>Nouveau House Media</strong> about scheduling, appointment confirmations and reminders, delivery notices, and replies to my questions. Msg frequency varies (up to 4 msgs/week). Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Consent is not a condition of purchase.</span></label></div>
+<div class="field"><label class="consent" for="sms_consent_marketing"><input type="checkbox" id="sms_consent_marketing" name="sms_consent_marketing" value="Yes - agreed to receive recurring marketing texts (offers, shoot availability) from Nouveau House Media"><span><strong>Yes, also send me occasional promotional texts.</strong> I agree to receive recurring marketing text messages from <strong>Nouveau House Media</strong> about listing photo and video offers and shoot availability. Msg frequency varies (up to 4 msgs/week). Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Consent is not a condition of purchase.</span></label></div>
+<p class="small">Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes. See our <a href="../privacy/" target="_blank">Privacy Policy</a> and <a href="../terms/" target="_blank">SMS Terms</a>.</p>
+<p class="small">Both boxes are optional, are not pre-checked, and can be chosen independently. If you check either one, please enter your mobile number.</p>
+</fieldset>
 <button class="btn" type="submit">Submit</button>
 </form>
-<p class="small" style="margin-top:22px">Prefer email? <a href="mailto:ishaan@nouveauhousemedia.com?subject=Nouveau%20House%20Media%20text%20opt-in&amp;body=Name%3A%0AEmail%3A%0AMobile%3A%0ABrokerage%3A%0A%0AYES%20TEXT%20-%20I%20agree%20to%20receive%20recurring%20text%20messages%20from%20Nouveau%20House%20Media%20about%20listing%20video%20and%20photo%20services.%20Msg%20frequency%20varies%20%28up%20to%204%20msgs/week%29.%20Msg%20%26%20data%20rates%20may%20apply.%20Reply%20HELP%20for%20help%2C%20STOP%20to%20opt%20out.">Send your details by email</a>.</p>
+<p class="small" style="margin-top:22px">Prefer email? <a href="mailto:ishaan@nouveauhousemedia.com?subject=Nouveau%20House%20Media%20text%20opt-in&amp;body=Name%3A%0AEmail%3A%0AMobile%3A%0ABrokerage%3A%0A%0AYES%20TEXT%20-%20I%20agree%20to%20receive%20text%20messages%20from%20Nouveau%20House%20Media%20about%20scheduling%2C%20appointment%20confirmations%20and%20reminders%2C%20delivery%20notices%2C%20and%20replies%20to%20my%20questions.%0A%0A%28Optional%20-%20keep%20this%20line%20only%20if%20you%20want%20promos%29%20YES%20PROMO%20-%20I%20also%20agree%20to%20receive%20occasional%20promotional%20texts%20from%20Nouveau%20House%20Media%20about%20listing%20photo%20and%20video%20offers%20and%20shoot%20availability.%0A%0AMsg%20frequency%20varies%20%28up%20to%204%20msgs/week%29.%20Msg%20%26%20data%20rates%20may%20apply.%20Reply%20HELP%20for%20help%2C%20STOP%20to%20opt%20out.%20Consent%20is%20not%20a%20condition%20of%20purchase.">Send your details by email</a>.</p>
 <p class="small">Or text <strong>REELS</strong> to <a href="sms:+18632502333?body=REELS">(863) 250-2333</a> to opt in. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
 </div>
 <script>
 (function(){var f=document.getElementById('optin');
 document.getElementById('next').value=new URL('../text/thanks/',location.href).href;
-f.addEventListener('submit',function(e){var c=document.getElementById('sms_consent'),m=document.getElementById('mobile');
-if(c.checked&&!m.value.trim()){e.preventDefault();alert('Please enter your mobile number to receive texts.');m.focus();}});})();
+f.addEventListener('submit',function(e){var t=document.getElementById('sms_consent_transactional'),k=document.getElementById('sms_consent_marketing'),m=document.getElementById('mobile');
+if((t.checked||k.checked)&&!m.value.trim()){e.preventDefault();alert('Please enter your mobile number to receive texts.');m.focus();}});})();
 </script>
 
 </main>
