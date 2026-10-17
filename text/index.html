@@ -5,20 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Text Opt-In | Nouveau House Media</title>
 <meta name="description" content="Opt in to text messages from Nouveau House Media about listing media shoot availability, scheduling and offers.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#f6f3ee">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="../">Nouveau House Media</a>
-<nav><a href="../#services">Services</a><a href="../#contact">Contact</a><a href="../text/">Text Updates</a></nav>
+<nav aria-label="Main"><a href="../#packages">Packages</a><a href="../#faq">FAQ</a><a href="../text/">Text Updates</a><a class="nav-cta" href="../#contact">Book</a></nav>
 </div></header>
 <main>
 
 <div class="wrap narrow legal">
 <p class="eyebrow">Text Updates for Listing Agents</p>
 <h1>Get texts from Nouveau House Media</h1>
-<p>Sign up for shoot availability, scheduling and delivery updates, plus occasional offers on listing reels, photos and drone media.</p>
+<p>Sign up for shoot availability, scheduling and delivery updates, plus occasional offers on listing reels and photos.</p>
 <form id="optin" action="https://formsubmit.co/ishaankumar179@gmail.com" method="POST">
 <input type="hidden" name="_subject" value="New Nouveau House Media text opt-in">
 <input type="hidden" name="_template" value="table">
@@ -27,13 +29,13 @@
 <input type="hidden" name="form" value="Nouveau House Media /text opt-in">
 <div class="field"><label class="lbl" for="name">Name <span class="req">*</span></label><input type="text" id="name" name="name" autocomplete="name" required></div>
 <div class="field"><label class="lbl" for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" autocomplete="email" required></div>
-<div class="field"><label class="lbl" for="mobile">Mobile number</label><input type="tel" id="mobile" name="mobile" autocomplete="tel" inputmode="tel" placeholder="(555) 555-5555"></div>
+<div class="field"><label class="lbl" for="mobile">Mobile number</label><input type="tel" id="mobile" name="mobile" autocomplete="tel" inputmode="tel" placeholder="10-digit mobile number"></div>
 <div class="field"><label class="lbl" for="brokerage">Brokerage</label><input type="text" id="brokerage" name="brokerage" autocomplete="organization"></div>
-<div class="field"><label class="consent" for="sms_consent"><input type="checkbox" id="sms_consent" name="sms_consent" value="Yes - agreed to receive texts from Nouveau House Media"><span>Yes, text me at the number above. By checking this box I agree to receive recurring text messages from <strong>Nouveau House Media</strong> about listing video, photo and drone services, including shoot availability, scheduling, and occasional promotions. Msg frequency varies (up to 4 msgs/week). Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Consent is not a condition of purchase. Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes. <a href="../privacy/" target="_blank">Privacy Policy</a> &middot; <a href="../terms/" target="_blank">SMS Terms</a></span></label></div>
+<div class="field"><label class="consent" for="sms_consent"><input type="checkbox" id="sms_consent" name="sms_consent" value="Yes - agreed to receive texts from Nouveau House Media"><span>Yes, text me at the number above. By checking this box I agree to receive recurring text messages from <strong>Nouveau House Media</strong> about listing video and photo services, including shoot availability, scheduling, and occasional promotions. Msg frequency varies (up to 4 msgs/week). Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Consent is not a condition of purchase. Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes. <a href="../privacy/" target="_blank">Privacy Policy</a> &middot; <a href="../terms/" target="_blank">SMS Terms</a></span></label></div>
 <p class="small">The checkbox is optional and is not pre-checked. If you check it, please enter your mobile number.</p>
 <button class="btn" type="submit">Submit</button>
 </form>
-<p class="small" style="margin-top:22px">Prefer email? <a href="mailto:ishaankumar179@gmail.com?subject=Nouveau%20House%20Media%20text%20opt-in&amp;body=Name%3A%0AEmail%3A%0AMobile%3A%0ABrokerage%3A%0A%0AYES%20TEXT%20-%20I%20agree%20to%20receive%20recurring%20text%20messages%20from%20Nouveau%20House%20Media%20about%20listing%20video%2C%20photo%20and%20drone%20services.%20Msg%20frequency%20varies%20(up%20to%204%20msgs%2Fweek).%20Msg%20%26%20data%20rates%20may%20apply.%20Reply%20HELP%20for%20help%2C%20STOP%20to%20opt%20out.">Send your details by email</a>.</p>
+<p class="small" style="margin-top:22px">Prefer email? <a href="mailto:ishaankumar179@gmail.com?subject=Nouveau%20House%20Media%20text%20opt-in&amp;body=Name%3A%0AEmail%3A%0AMobile%3A%0ABrokerage%3A%0A%0AYES%20TEXT%20-%20I%20agree%20to%20receive%20recurring%20text%20messages%20from%20Nouveau%20House%20Media%20about%20listing%20video%20and%20photo%20services.%20Msg%20frequency%20varies%20%28up%20to%204%20msgs/week%29.%20Msg%20%26%20data%20rates%20may%20apply.%20Reply%20HELP%20for%20help%2C%20STOP%20to%20opt%20out.">Send your details by email</a>.</p>
 <p class="small">You can also text <strong>REELS</strong> to our number to opt in. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
 </div>
 <script>
@@ -45,8 +47,9 @@ if(c.checked&&!m.value.trim()){e.preventDefault();alert('Please enter your mobil
 
 </main>
 <footer><div class="wrap">
-<p><strong>Nouveau House Media</strong> &middot; Listing reels, photography &amp; drone media for real estate agents in Polk County and Orlando, FL.</p>
-<p><a href="../privacy/">Privacy Policy</a><a href="../terms/">SMS Terms</a><a href="../text/">Text Opt-In</a><a href="mailto:ishaankumar179@gmail.com">ishaankumar179@gmail.com</a></p>
+<p class="foot-brand">Nouveau House Media</p>
+<p>Listing photos and vertical listing reels for real estate agents in Polk County and Orlando, FL.</p>
+<p class="foot-links"><a href="../privacy/">Privacy Policy</a><a href="../terms/">SMS Terms</a><a href="../text/">Text Opt-In</a><a href="mailto:ishaankumar179@gmail.com">ishaankumar179@gmail.com</a></p>
 <p>&copy; 2026 Nouveau House Media. Operated by Ishaan Kumar, sole proprietor.</p>
 </div></footer>
 </body>
