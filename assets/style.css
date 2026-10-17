@@ -168,3 +168,8 @@ input:focus{outline:2px solid var(--gold);outline-offset:1px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gallery img{transition:none}}
 .badge span{white-space:nowrap}
 @media (max-width:999px){.cards .card.featured{order:-1}}
+.price .per{font-size:.95rem;color:var(--muted);margin-left:-6px}
+.monthly{background:var(--stone)}
+.monthly .card{background:var(--paper)}
+.monthly .small{margin-top:18px}
+@media (max-width:520px){nav{gap:11px}nav a{letter-spacing:.14em;font-size:.62rem}}
