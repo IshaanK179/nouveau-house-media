@@ -78,6 +78,11 @@ section{padding:64px 0;border-top:1px solid var(--line)}
 .film-frame{width:100%;border-radius:3px;overflow:hidden;background:#000;aspect-ratio:16/9;box-shadow:0 24px 50px rgba(30,25,15,.16);margin:18px 0 32px}
 .film-frame video{width:100%;height:100%;object-fit:cover}
 
+/* vesara clips */
+.vesara-grid{display:grid;grid-template-columns:1fr;gap:16px;margin:18px 0 14px}
+.vesara-frame{margin:0 auto;width:100%;max-width:320px;border-radius:14px;overflow:hidden;background:#000;aspect-ratio:9/16;box-shadow:0 24px 50px rgba(30,25,15,.16)}
+.vesara-frame video{width:100%;height:100%;object-fit:cover}
+
 /* packages */
 .cards{display:grid;gap:18px}
 .card{background:var(--paper);border:1px solid var(--line);padding:28px 24px;border-radius:3px;display:flex;flex-direction:column}
@@ -158,6 +163,8 @@ input:focus{outline:2px solid var(--gold);outline-offset:1px}
  .split{grid-template-columns:1.2fr 1fr}
  .reel-grid{grid-template-columns:minmax(260px,360px) 1fr;gap:64px}
  .btns .btn{flex:0 0 auto}
+ .vesara-grid{grid-template-columns:repeat(3,1fr);gap:14px}
+ .vesara-frame{max-width:none;border-radius:12px}
 }
 @media (min-width:1000px){
  .hero{grid-template-columns:1fr 1fr;align-items:stretch;min-height:calc(100vh - 62px);max-height:860px}
