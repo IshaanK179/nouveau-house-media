@@ -1,4 +1,5 @@
 (function () {
+  var RM = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   var FORM_URL = "https://nhm-booking.ishaankre.workers.dev/book";
   var SLUGS = {
     photos: "photos",
@@ -79,13 +80,17 @@
       var ad = form.querySelector('input[name="addon"][data-slug="' + slug + '"]');
       if (ad) ad.checked = true;
     });
+    if (intent.addons.length) {
+      var more = document.getElementById("book-more");
+      if (more) more.open = true;
+    }
     if (intent.founding) {
       var f = document.getElementById("book-founding");
       if (f) f.checked = true;
     }
     if (scroll) {
       var section = document.getElementById("book");
-      if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (section) section.scrollIntoView({ behavior: RM ? "auto" : "smooth", block: "start" });
     }
   }
 
@@ -94,7 +99,7 @@
     if (errorText) errorText.textContent = msg || "Please try again, or email ishaan@nouveauhousemedia.com.";
     if (errorBox) {
       errorBox.hidden = false;
-      errorBox.scrollIntoView({ behavior: "smooth", block: "center" });
+      errorBox.scrollIntoView({ behavior: RM ? "auto" : "smooth", block: "center" });
     }
   }
 
@@ -102,7 +107,8 @@
     if (errorBox) errorBox.hidden = true;
     if (success) {
       success.hidden = false;
-      success.scrollIntoView({ behavior: "smooth", block: "center" });
+      success.scrollIntoView({ behavior: RM ? "auto" : "smooth", block: "center" });
+      try { success.focus({ preventScroll: true }); } catch (e) {}
     }
     form.hidden = true;
   }

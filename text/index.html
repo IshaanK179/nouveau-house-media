@@ -5,15 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Text Opt-In | Nouveau House Media</title>
 <meta name="description" content="Opt in to text messages from Nouveau House Media about listing media shoot availability, scheduling and offers.">
-<meta name="theme-color" content="#f6f3ee">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#f1ece4">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/style.css?v=3">
 </head>
 <body>
-<header class="site"><div class="wrap">
-<a class="brand" href="../">Nouveau House Media</a>
-<nav aria-label="Main"><a href="../#work">Work</a><a href="../#packages">Packages</a><a href="../#monthly">Monthly</a><a href="../#faq">FAQ</a><a href="../text/">Text Updates</a><a class="nav-cta" href="../#book">Book</a></nav>
+<header class="site"><div class="bar">
+<a class="brand" href="../" aria-label="Nouveau House Media home"><span class="rec" aria-hidden="true"></span>Nouveau House Media</a>
+<nav class="nav" id="nav" aria-label="Main"><a href="../#work">Work</a><a href="../#packages">Packages</a><a href="../#monthly">Monthly</a><a href="../#faq">FAQ</a><a href="../text/">Text Updates</a><a class="nav-tel" href="tel:+18632502333">(863) 250-2333</a></nav>
+<a class="btn btn-sm" href="../#book">Book</a>
+<button class="menu" type="button" aria-expanded="false" aria-controls="nav"><span class="sr">Menu</span><i></i><i></i></button>
 </div></header>
 <main>
 
@@ -50,11 +51,12 @@ if((t.checked||k.checked)&&!m.value.trim()){e.preventDefault();alert('Please ent
 </script>
 
 </main>
-<footer><div class="wrap">
+<footer class="site-foot"><div class="wrap"><div class="foot-cols">
 <p class="foot-brand">Nouveau House Media</p>
 <p>Listing photos and vertical listing reels for real estate agents in Polk County, Orlando and Tampa Bay, FL.</p>
-<p class="foot-links"><a href="../privacy/">Privacy Policy</a><a href="../terms/">SMS Terms</a><a href="../text/">Text Opt-In</a><a href="mailto:ishaan@nouveauhousemedia.com">ishaan@nouveauhousemedia.com</a></p>
+<p class="foot-links"><a href="../privacy/">Privacy Policy</a><a href="../terms/">SMS Terms</a><a href="../text/">Text Opt-In</a><a href="mailto:ishaan@nouveauhousemedia.com">ishaan@nouveauhousemedia.com</a><a href="tel:+18632502333">(863) 250-2333</a></p>
 <p>&copy; 2026 Nouveau House Media. Operated by Ishaan Kumar, sole proprietor.</p>
-</div></footer>
+</div></div></footer>
+<script>(function(){var m=document.querySelector(".menu"),n=document.getElementById("nav");if(m&&n)m.addEventListener("click",function(){var o=n.classList.toggle("open");m.setAttribute("aria-expanded",o?"true":"false")})})();</script>
 </body>
 </html>
